@@ -26,6 +26,7 @@
     width: 100%;
     height: 90vh;
     background-color: #000;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,6 +212,65 @@
         transform: scale(1.1);
 }
 
+/* --------------footer----------------- */
+.main-footer{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    
+}
+.main-footer hr{
+    border : none;
+    height: 1px;
+    background: rgb(167, 167, 167);
+    width: 50%;
+    margin: 0 auto;
+   
+}
+
+
+.main-footer h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.goal-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar{
+    width: 55%;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: grey;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,7 +308,7 @@
 
 
 /* responsive blog section */
-@media only screen and (max-width:768px){
+@media (min-width: 481px) and (max-width: 767px){
     .side-bar{
         width: 100%;
 
@@ -272,7 +332,7 @@
 
 }
 
-@media only screen and (max-width:768px){
+@media (min-width: 481px) and (max-width: 767px){
     .all-blogs{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -294,7 +354,67 @@
         border: 1px solid lightgray;
         font-size: 20px;
     }
+     
+}
+/* -----------responsive for tablet------------- */
+@media (min-width: 768px) and (max-width: 1024px){
 
-    
-    
+    .all-blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+    }
+    .header-container{
+        height: 50vh;  
+    }
+
+    .side-bar{
+        width: 100%;
+
+    }
+    .all-blogs{
+        width: 100%;
+    }
+
+    .blog-container{
+        display: flex;
+        flex-direction: column;  
+    }
+   
+
+    .side-bar{
+        order: 1;
+    }
+    .all-blogs{
+        order: 2;
+    }
+
+    .side-bar-content{
+        background-color: white;
+        display: inline-flex;
+        position: relative;
+
+    }
+
+    .side-bar{
+        width: 100%;
+        display: inline-flex;
+    }
+
+    .btn-2{
+        font-size: 20px;
+        border: 1px solid rgb(167, 167, 167);
+    }
+
+    .blog img{
+        width:100%;}
+
+        .all-blogs .live-heading h3{
+            font-size: 30px;}
+
+
+
+
+
+
 }
