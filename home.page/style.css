@@ -38,7 +38,7 @@
     font-size: 5vw;
     font-weight: 700;
     line-height: 80px;
-    padding-right: 10%;
+    
 
 }
 .header-content p{
@@ -46,7 +46,7 @@
     font-size: 1.2vw;
     line-height: 26px;
     color: white;
-    padding-right:25%;
+    
 }
 
 .btn-1{
@@ -147,7 +147,7 @@
 
 .live-heading h3 {
     text-align: left;
-    font-size: 17px;
+    font-size: 1.3vw;
     font-weight: 700;
     padding: 10px 0;
  }
@@ -219,9 +219,34 @@
 
 /* responsive header */
 
-@media screen {
+@media only screen and (max-width:768px) {
+    .header-content{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin: 10 auto;
+        padding: 10%;
+        justify-content: center;
+
+    }
+    .header-image img{
+        width: 100%;
+    }
+    .header-content p{
+        font-size: 1.7vw;}
     
+
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;  
+    }
+  
+
 }
+
+
+
 /* responsive blog section */
 @media only screen and (max-width:768px){
     .side-bar{
@@ -236,13 +261,40 @@
         display: flex;
         flex-direction: column;  
     }
+   
+
     .side-bar{
         order: 1;
     }
     .all-blogs{
         order: 2;
     }
-    
 
 }
 
+@media only screen and (max-width:768px){
+    .all-blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+
+    }
+    .blog img{
+        width:100%;
+    }
+    .all-blogs .live-heading h3{
+        font-size: 30px;
+    }
+
+    .side-bar-content{
+        background-color: white;
+    }
+
+    .btn-2{
+        border: 1px solid lightgray;
+        font-size: 20px;
+    }
+
+    
+    
+}
