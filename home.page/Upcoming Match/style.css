@@ -80,7 +80,9 @@
        transform: translateY(-2.5rem);
    } 
 }
-/* -- ------------------ blog start---------------- */
+
+/* ------------------Match section-------------- */
+
 
 .blog-container{
     max-height: fit-content;
@@ -94,14 +96,15 @@
 .all-blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap:10px ;
+    grid-row-gap:10px;
+    grid-column-gap: 10px ;
     width: 70%;
     float: left;
     text-align: center; 
     
 }
+
 .blog{
-    margin-left: 10px;
     border: 1px solid rgb(211, 211, 211);
     border-radius: 5px;
 }
@@ -111,34 +114,25 @@
 }
 
 .live-heading{
-    text-align: left;
-    margin-left: 25px;
-    padding: 10px 0px;
+    padding: 10px 10px;
 
 }
 
 .live-info{
-    display: flex;
-    justify-content:flex-start;
-    text-align: right;
+    justify-content:center;
+    text-align: center;
     
 }
-.live-info .time{
-    margin-right: 15px;
-}
+
 
 
 .live-heading h3 {
-    text-align: left;
+    text-align: center;
     font-size: 1.3vw;
     font-weight: 700;
-    padding: 10px 0;
+    padding: 10px 10px;
  }
  
-
-.live-heading button{
-    padding: 5px 8px;
-}
 
 .side-bar{
     display: flex; 
@@ -194,7 +188,20 @@
     transform: scale(1.1);
 }
 
-/* --------------footer----------------- */
+.match-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.match-box img{
+    width: 100px;
+    padding: 10px;
+}
+
+/* -- -----------foter--------------  */
+
 .main-footer{
     width: 100%;
     height: 50vh;
@@ -241,13 +248,9 @@
 }
 
 
+/* responsive header */
 
-
-
-
- /* /////////////// responsive header //////////////////// */
-
- @media (min-width: 481px) and (max-width: 767px) {
+@media only screen and (max-width:768px) {
     .header-content{
         width: 100%;
         text-align: center;
@@ -268,11 +271,8 @@
         display: flex;
         flex-direction: column;
         height: 70vh;  
-    }
-  
-
+    } 
 }
-
 
 
 /* /////////////responsive blog section /////////////// */
@@ -307,10 +307,10 @@
         margin-top: 20px;
 
     }
-    .blog img{
+    .match-box img{
         width:100%;
     }
-    .all-blogs .live-heading h3{
+    .all-blogs .live-info h3{
         font-size: 30px;
     }
 
@@ -324,6 +324,8 @@
     }
      
 }
+
+
 /* -----------responsive for tablet------------- */
 @media (min-width: 768px) and (max-width: 1024px){
 
@@ -382,6 +384,9 @@
 
 }
 
+
+
+
 /* /////////////footer responsive///////////////// */
 
 @media (min-width: 481px) and (max-width: 767px){
@@ -396,3 +401,5 @@
         margin: 5px auto;
     }
 }
+
+
